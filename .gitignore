@@ -1,0 +1,9 @@
+﻿**/appsettings.json
+**/appsettings.**
+**/obj/**
+**/bin/**
+**/.idea/**
+**/.vs/**
+**/**.db
+**/**.db-shm
+**/**.db-wal

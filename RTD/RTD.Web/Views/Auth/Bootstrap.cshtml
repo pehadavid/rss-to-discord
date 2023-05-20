@@ -1,0 +1,41 @@
+﻿@model AccountModel
+
+<div class="h-full w-full flex justify-center">
+    <div class="card w-96 bg-base-100 shadow-xl mt-3">
+        <form class="card-body" method="post">
+            <h1 class="card-title">Rss To Discord</h1>
+            <h2 class="text-sm text-gray-500">Create admin account</h2>
+
+            <div class="form-control">
+                <input
+                    type="text"
+                    placeholder="user name ..."
+                    class="input input-bordered w-full max-w-xs"
+                    name="Username"/>
+            </div>
+            <div class="form-control">
+                <input
+                    type="password"
+                    placeholder="password ..."
+                    class="input input-bordered w-full max-w-xs"
+                    name="Password"/>
+            </div>
+            @if (Model.HasError())
+            {
+                <div
+                    class="bg-red-700 p-4 text-white font-semibold rounded-sm text-center">
+                    @Model.Error
+                </div>
+            }
+            <div class="card-actions justify-end">
+                <button class="btn btn-primary" type="submit" >
+                  Create
+                </button
+                >
+            </div>
+        </form>
+    </div>
+</div>
+<script >
+
+</script>

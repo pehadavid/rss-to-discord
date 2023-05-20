@@ -1,0 +1,36 @@
+﻿<div class="h-full w-full flex justify-center">
+    <div class="card w-96 bg-base-100 shadow-xl mt-3">
+        <form class="card-body" on:submit={doLogin}>
+            <h1 class="card-title">123comparer</h1>
+            <h2 class="text-sm text-gray-500">Backoffice</h2>
+
+            <div class="form-control">
+                <input
+                    bind:value={login}
+                    type="text"
+                    placeholder="email ..."
+                    class="input input-bordered w-full max-w-xs"
+                />
+            </div>
+            <div  class="form-control">
+                <input
+                    bind:value={password}
+                    type="password"
+                    placeholder="password ..."
+                    class="input input-bordered w-full max-w-xs"
+                />
+            </div>
+            <div
+                class="bg-red-700 p-4 text-white font-semibold rounded-sm text-center"
+            >
+                {error}
+            </div>
+
+            <div class="card-actions justify-end">
+                <button class="btn btn-primary" type="submit" disabled={!isValid}
+                ><i class="fa-solid fa-key"></i>&nbsp;Identification</button
+                >
+            </div>
+        </form>
+    </div>
+</div>
